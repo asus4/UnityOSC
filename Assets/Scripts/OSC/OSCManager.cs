@@ -41,6 +41,10 @@ public class OSCManager : MonoBehaviour {
 		DontDestroyOnLoad(_instance.gameObject);
 	}
 	
+	void Start() {
+		
+	}
+	
 	void OnEnable() {
 		server = new OSCServer();
 		server.Start(localPort);
