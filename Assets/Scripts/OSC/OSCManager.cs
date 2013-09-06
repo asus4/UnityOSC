@@ -54,7 +54,7 @@ public class OSCManager : MonoBehaviour {
 		server.Stop();
 	}
 	
-	void Update() {
+	void FixedUpdate() {
 		OSCMessage[] msgs = server.Update();
 		foreach(OSCMessage msg in msgs) {
 			if(OnMessage != null) {
